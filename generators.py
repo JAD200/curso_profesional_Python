@@ -1,6 +1,7 @@
 import time
 
-def fibo_gen():
+def fibo_gen(max_number):
+    max_number = max_number
     n1 = 0
     n2 = 1
     counter = 0
@@ -13,13 +14,15 @@ def fibo_gen():
             yield n2
         else:
             aux = n1 + n2 # aux == 0 + 1
-            n1, n2 = n2, aux # n1 == 1 , n2 == 1
+            if aux >= max_number:
+                break
+            n1, n2 = n2, aux # n1 == n2 , n2 == aux
             counter += 1
             yield aux
 
 
 if __name__ == '__main__':
-    fibonacci = fibo_gen()
+    fibonacci = fibo_gen(80)
     for element in fibonacci:
         print(element)
         time.sleep(0.5)
