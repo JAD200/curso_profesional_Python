@@ -2,6 +2,9 @@ import time
 
 class FiboIter():
 
+    def __init__(self, max_number: int):
+        self.max_number = max_number
+
     def __iter__(self):
         self.n1 = 0
         self.n2 = 1
@@ -17,6 +20,8 @@ class FiboIter():
             return self.n2 # n2 == 1
         else:
             self.aux = self.n1 + self.n2 # aux == 0 + 1
+            if self.aux >= self.max_number:
+                raise StopIteration
         #       This is the same as Swapping
             # self.n1 = self.n2 # n1 == 1
             # self.n2 = self.aux # n2 == 1
@@ -31,7 +36,7 @@ class FiboIter():
 
 
 if __name__ == '__main__':
-    fibonacci = FiboIter()
+    fibonacci = FiboIter(100)
     for element in fibonacci:
         print(element)
         time.sleep(1)
