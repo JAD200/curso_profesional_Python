@@ -1,14 +1,22 @@
 from datetime import date, datetime
 import pytz
 
-bogota_timezone = pytz.timezone("America/Bogota")
-bogota_date = datetime.now(bogota_timezone)
-print('Bogota: ', bogota_date.strftime('%d/%m/%Y, %H:%M:%S'))
 
-mexico_timezone = pytz.timezone("America/Mexico_City")
-mexico_date = datetime.now(mexico_timezone)
-print('Ciudad de Mexico: ', mexico_date.strftime('%d/%m/%Y, %H:%M:%S'))
+def timezone(ciudad):
+    timezon_city = pytz.timezone('America/' + ciudad)
+    timezon_date = datetime.now(timezon_city)
+    print(ciudad,': ', timezon_date.strftime('%d/%m/%Y, %H:%M:%S'))
 
-caracas_timezone = pytz.timezone("America/Caracas")
-caracas_date = datetime.now(caracas_timezone)
-print('Caracas: ', caracas_date.strftime('%d/%m/%Y, %H:%M:%S'))
+def run():
+    while True:
+        try:
+            print('*\tQuieres saber que hora es en otro lugar?\t*')
+            ciudad = str(input('Introduzca una ciudad capital por favor: ')).replace(' ', '_').capitalize()
+            timezone(ciudad)
+            break
+        except Exception:
+            print('Lo sentimos pero la ciudad ', ciudad,' no existe. \nIntente de nuevo' )
+
+
+if __name__ == '__main__':
+    run()
