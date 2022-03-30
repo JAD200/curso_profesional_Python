@@ -2,16 +2,16 @@
 
 ## Conceptos vistos
 1. Static Typing
-2. Conceptos avanzados de funciones
-3. Estructuras de datos avanzadas
+2. Advanced concepts of functions
+3. Advance data structure
 4. Time Zones
 
 ## Programas realizados
-- Palindromos con tipdo estatico
-- Numero primarios con tipdo estatico
+- Palíndromo con tipado estático
+- Numero primarios con tipado estático
 - Divisiones con nested functions
-- Sucecion de Fibonacci con iteradores
-- Sucecion de Fibonacci con generadores
+- Sucesión de Fibonacci con iterators
+- Sucesión de Fibonacci con generadores
 - Zonas horarias con "pytz"
 
 
