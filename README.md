@@ -14,11 +14,9 @@
 - Sucesión de Fibonacci con generadores
 - Zonas horarias con "pytz"
 
-
-
-
 ------------
 
-  [![Logo python](https://i.imgur.com/29fid2V.png  "Logo python")](https://www.python.org/)
-####  Hecho por [Juan Di Pasquo](https://twitter.com/JADiPasquo "Juan Di Pasquo")
-#### En [Platzi](https://platzi.com/ "Platzi") con [Facundo García Martoni](https://twitter.com/facmartoni "Facundo García Martoni")
+ [![Logo python](https://i.imgur.com/29fid2V.png  "Logo python")](https://www.python.org/)
+
+##  Hecho por [ Juan Agustin Di Pasquo](https://linkedin.com/in/juan-agustin-di-pasquo-jad " Juan Agustin Di Pasquo")
+## En [Platzi](https://platzi.com/ "Platzi") con [Facundo García Martoni](https://twitter.com/facmartoni "Facundo García Martoni")
